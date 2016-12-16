@@ -1,0 +1,143 @@
+/* Делаем блоками элементы разметки HTML5*/
+header, nav, main, figure, section, article, h1 ,footer
+	{
+		display: block;
+	}
+/* Задаем стили для Блоков-оберток*/
+.header
+{
+	display: block;
+	height: 100px;
+	width: 100%;
+	background: #ccc;
+}
+
+.nav
+{
+	clear: both; 
+	display: block;
+	float: left;
+	width: 100%;
+	background: #ccc;
+	height: 80px;
+}
+.LabelORG
+{
+	display: block;
+	float: left;
+	height: 90px;
+	width: 45%;
+	background: #ccc;
+	font-size: 18pt;
+	padding-left: 5%;
+	padding-top: 10px;
+}
+.LogoORG
+{
+	display: block;
+	float: left;
+	height: 100px;
+	width: 50%;
+	background: #ccc;
+	font-size: 20pt;
+}
+
+nav a
+{
+	color: black;
+}
+
+li
+{
+	display: inline-block;
+	float: left;
+	width: 170px;
+	font-size: 14pt;
+	text-align: center;
+}
+figure, main, section
+{
+	clear: both;
+}
+
+.figure
+{
+	display: block;
+	width: 100%;
+}
+
+.figure img
+{
+	width: 100%;
+}
+#LOGO
+{
+	width: 60px;
+	height: 100px;
+	float: right;
+}
+.main
+{
+	display: block;
+	clear: both;
+	width: 1000px;
+	margin: 0 auto;
+}
+.section
+{
+	display: block;
+	clear: both;
+	width: 90%;
+	padding-left: 5%;
+	padding-right: 5%;
+	font-size: 14pt;
+	margin-bottom: 50px;
+}
+.footer
+{
+	display: block;
+	width: 100%;
+	background: #ccc;
+	height: 300px;
+}
+.recvizit
+{
+	display: block;
+	float: left;
+	width: 45%;
+	font-size: 13pt;
+	padding-left: 5%;
+	padding-top: 10px;
+	color: #9a9a9a;
+}
+.contact
+ {
+ 	display: block;
+	float: left;
+	width: 45%;
+	font-size: 13pt;
+	padding-left: 5%;
+	padding-top: 10px;
+ }
+
+ .contactItem
+ {
+	display: block;
+	color: #9a9a9a;
+	padding-bottom: 10px;
+	padding-left: 5px;
+	height: 30px;
+ }
+
+ .contactItem a
+ {
+	vertical-align: center;
+	padding-left: 5px;
+	padding-bottom: 10px;
+	color: #9a9a9a;
+ }
+ .contactItem img
+ {
+	padding-top: 5px;
+	padding-left: 5px;
+ }
