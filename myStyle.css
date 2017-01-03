@@ -1,105 +1,458 @@
-/* Делаем блоками элементы разметки HTML5*/
-header, nav, main, figure, section, article, h1 ,footer
-	{
-		display: block;
-	}
-/* Задаем стили для Блоков-оберток*/
+header
+{
+	display: block;
+	width: 100%;
+	height: 53px;
+	margin: 0 auto;
+	top: 0px;
+	z-index: 998;
+}
+
 .header
 {
 	display: block;
-	height: 100px;
+	background-color: #f5f5f5;
+	position: fixed;
+	top: 0px;
+	z-index: 999;
 	width: 100%;
-	background: #ccc;
 }
 
-.nav
-{
-	clear: both; 
-	display: block;
-	float: left;
-	width: 100%;
-	background: #ccc;
-	height: 80px;
-}
-.LabelORG
-{
-	display: block;
-	float: left;
-	height: 90px;
-	width: 45%;
-	background: #ccc;
-	font-size: 18pt;
-	padding-left: 5%;
-	padding-top: 10px;
-}
-.LogoORG
-{
-	display: block;
-	float: left;
-	height: 100px;
-	width: 50%;
-	background: #ccc;
-	font-size: 20pt;
-}
-
-nav a
-{
-	color: black;
-}
-
-li
+figure
 {
 	display: inline-block;
 	float: left;
-	width: 170px;
-	font-size: 14pt;
-	text-align: center;
-}
-figure, main, section
-{
-	clear: both;
 }
 
-.figure
+.Logo
 {
 	display: block;
-	width: 100%;
+	vertical-align: middle;
+	float: left;
+	width: 40%;
+	top: 0px;
+	margin-top: 0px;
 }
 
-.figure img
+.Logo a
 {
-	width: 100%;
+	display: inline-block;
+	float: left;
+	vertical-align: middle;
+	height: 100%;
+	padding-top: 3px;
+
 }
-#LOGO
+
+.Logo img
 {
-	width: 60px;
-	height: 100px;
-	float: right;
+	display: inline-block;
+	float: left;
+	height: 47px;
+	padding-bottom: 3px;
 }
-.main
+
+.Logo figcaption
 {
-	display: block;
-	clear: both;
-	width: 1000px;
-	margin: 0 auto;
+	display: inline-block;
+	float: left;
+	vertical-align: middle;
+	padding-left: 5px;
+	padding-top: 15px;
+	font-size: 1.4rem;
+    line-height: 18px;
+    font-weight: normal;
+    height: 100%;
 }
-.section
+
+header p
 {
-	display: block;
-	clear: both;
-	width: 90%;
-	padding-left: 5%;
-	padding-right: 5%;
-	font-size: 14pt;
-	margin-bottom: 50px;
+	color: #888;
+	outline: 0;
+	font-size: 1.4rem;
+    line-height: 18px;
+    font-weight: normal;
 }
-.footer
+
+nav
 {
-	display: block;
-	width: 100%;
-	background: #ccc;
 	height: 300px;
 }
+
+.menu1
+{
+	display: inline-block;
+	float: left;
+	height: 53px;
+	list-style: none;
+	padding-left: 200px;
+}
+
+#sub:after
+{
+	content: "➦";
+}
+
+.menu1 img
+{
+	display: inline-block;
+	float: left;
+	height: 47px;
+	padding-top: 10px;
+	padding-bottom: 3px;
+}
+
+.menu1 span
+{
+	display: inline-block;
+	float: left;	
+	padding-left: 5px;
+	vertical-align: middle;
+	padding-top: 15px;
+	font-size: 1.4rem;
+    line-height: 18px;
+    font-weight: normal;
+	color: #9a9a9a;
+}
+.menu1 > span:hover .menu2
+{
+	display: block;
+}
+
+#menu_ico
+{
+	width: 30px;
+	height: 30px;
+}
+
+.menu2
+{
+	position: relative;
+	display: none;
+	width: 200px;
+	height: auto;
+	z-index: 10;
+	border: 1px solid grey;
+	background: #f5f5f5;
+	list-style: none;
+}
+
+.menu2 ul
+{
+	position: relative;
+	display: none;
+	margin: 0;
+	padding: 0;
+	height: auto;
+	width: 100%;
+	list-style: none;
+	background-color: #f5f5f5;
+}
+
+.menu2 li
+{
+	padding-top: 10px;
+	padding-left: 0px;
+}
+.menu2 li > ul
+{
+	position: absolute;
+	display: none;
+	margin: 0;
+	padding: 0;
+	height: auto;
+	width: 100%;
+	list-style: none;
+	background-color: #f5f5f5;	
+	left: 195px;
+	top: 30px;
+	border: 1px solid grey;
+}
+
+.menu2 li:hover > ul
+{
+	display: block;
+}
+
+.menu2 ul li
+{
+	position: relative;
+	display: block;
+	float: left;
+	width: auto;
+	height: auto;	
+}
+
+.menu2 ul li > ul
+{
+	display: none;
+	position: absolute;
+	top: 35;
+	left: 0;
+	width: 200px;
+	background: coral;
+	padding-top: 10px;
+}
+.menu2 a
+{
+	text-decoration: none;
+	color: #9a9a9a;
+}
+/*.menu2 ul li:hover ul
+{
+	display: block;
+}*/
+
+.content
+{
+	display: block;
+	margin-top: 10px;
+	width: 100%;
+	height: 100%
+}
+
+body
+{
+	max-width: 1250px;
+}
+
+.IMG_Theme
+{
+	display: block;
+	float: left;
+	font-family: 'Frutiger',sans-serif;
+	width: 100%;
+	height: 355px;
+	top: 0px;
+	left: 0px;
+	background-image: url("IMAGES/General_page.png");
+}
+.IMG_Theme_pic
+{
+	display: block;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	height: 200px;
+}
+.IMG_Theme_lbl
+{
+	display: block;
+	float: left;
+	font-size: 45px;
+	line-height: 47px;
+	color: #0696d7;
+	width: 51%;
+	font-weight: lighter;
+	padding-left: 220px;
+}
+
+.about
+{
+	color: white;
+	display: inline-block;
+	float: left;
+	padding-left: 220px;
+	font-size: 45px;
+	line-height: 47px;
+	width: 51%;
+	font-weight: lighter;
+	z-index: 1;
+}
+.about_details
+{
+    color: white;
+    font-size: 19px;
+    line-height: 24px;
+	display: inline-block;
+	float: left;
+	padding-left: 220px;
+	width: 55%;
+ }
+ .link_theme
+ {
+ 	display: block;
+ 	float: left;
+
+	width: 170px;
+	z-index: 1;
+	color: white;
+	font-family: 'Frutiger',sans-serif;
+    line-height: 1.4;
+    font-size: 14px;
+    height: 20px;
+    vertical-align: center;
+	padding-left: 220px;
+ }
+ .link_theme a
+ {
+ 	border: 2px solid;
+ 	border-color: white;
+ 	color: white;
+  	text-decoration: none;
+  	padding: 3px 3px 3px 3px ;
+ }
+ .link_theme:hover a 
+ {
+ 	color: red;
+ 	font-style: normal;
+ }
+
+.articles
+{
+	display: block;
+}
+
+article
+{
+	display: inline-block;
+	border: 1px solid;
+	border-color: grey;
+	width: 200px;
+	height: 250px;
+}
+.article
+{
+    font-size: 19px;
+    line-height: 1.11;
+}
+.article h2
+{
+	color: #444444;
+    line-height: 24px;
+	padding-left: 20px;
+}
+
+.article h3
+{
+    color: #444444;
+    line-height: 24px;
+   	padding-left: 20px;
+}
+
+.article hr
+{
+	color: #444444;
+}
+.article img
+{
+	display: inline-block;
+	float: left;
+	width: 20px;
+	height: 20px;
+	color: white;
+}
+.article figcaption
+{
+	display: inline-block;
+}
+.article:hover
+{
+	background-image: url('IMAGES/article1.png');
+}
+
+.article:hover a{color: white;}
+.article:hover h2{color: white;}
+.article:hover h3{color: white;}
+.article:hover figcaption{color: white;}
+
+#law
+{
+	display: inline-block;
+	width: 200px;
+	height: 250px;
+	background-image: url('IMAGES/law.png');
+	background-size: 200px 250px;
+}
+
+ #InOrg
+ {
+ 	background: DodgerBlue;
+ }
+#News
+{
+background: linear-gradient(to top, DodgerBlue, #f1da36);
+}
+
+#law:hover
+{
+	display: inline-block;
+	width: 200px;
+	height: 250px;
+	background-image: url('IMAGES/article1.png');
+	background-size: 200px 250px;
+}
+.menu
+{
+	position: relative;
+	display: block;
+	width: 50%;
+	height: auto;
+	z-index: 999;
+}
+.menu ul
+{
+	position: relative;
+	display: block;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: auto;
+	list-style: none;
+}
+.menu > ul:after
+{
+	display: block;
+	content: '';
+	clear: both;
+	height: 0;
+}
+.menu ul li
+{
+	position: relative;
+	display: block;
+	float: left;
+	width: auto;
+	height: auto;
+}
+.menu ul li a
+{
+	display: block;
+	padding: 9px 25px 0px 25px;
+	font-size: 14px;
+	height: 35px;
+}
+.menu ul li > ul
+{
+	position: absolute;
+	top: 35px;
+	left: 0;
+	display: none;
+	width: 200px;
+}
+.menu ul li:hover ul 
+{
+	display: block;
+}
+.menu ul li > ul li a
+{
+	display: block;
+	padding: 7px 25px;
+}
+.menu ul li > ul li a:hover
+{
+
+}
+footer
+{
+	display: block;
+	clear: both;
+	margin: 0px auto;
+	width: 100%;
+	background-color: #f5f5f5;
+	height: 300px;
+}
+
 .recvizit
 {
 	display: block;
@@ -123,21 +476,34 @@ figure, main, section
  .contactItem
  {
 	display: block;
+	float: left;
 	color: #9a9a9a;
-	padding-bottom: 10px;
-	padding-left: 5px;
-	height: 30px;
- }
+	width: 300px; 
+}
 
  .contactItem a
  {
+	display: inline-block;
 	vertical-align: center;
-	padding-left: 5px;
-	padding-bottom: 10px;
 	color: #9a9a9a;
+	padding-top: 20px;
  }
  .contactItem img
  {
-	padding-top: 5px;
-	padding-left: 5px;
+	width: 30px;
+	height: 30px;
  }
+ #mapID
+ {
+ 	width: 140px;
+ 	height: 100px;
+ }
+ .contactItem summary
+ {
+ 	padding-top: 25px;
+ }
+
+.menu2
+{
+	border: 1px solid;
+}

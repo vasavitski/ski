@@ -2,66 +2,85 @@
 <html lang=”ru”>
 	<head>
 		<meta charset="utf-8">
-		<title>Главная страница СРО "Союз кадастровых инженеров"</title>
+		<title>Главная СРО "Союз кадастровых инженеров"</title>
 		<link href="myStyle.css" rel="stylesheet">
+		<link rel="icon" type="image/png" href="IMAGES/LOGO.png" />
 		<!--<script src="scripts.js"></script>-->
 	</head> 
 	<body>
-		<div class="header">
-			<header>
-				<div class="LabelORG">Ассоциация<br>"Союз кадастровых инженеров"</div>
-				<div class="LogoORG">
-				<div class="figure">
-					<figure id="LOGO">
-						<img src="IMAGES/LOGO.png">
-						<figcaption></figcaption>
-					</figure>
-				</div>
-				</div>
-				<!--<p>Баннеры, слайдер, контакты, лого, поиск</p>-->
-				<div class="nav">
-				<nav>
+		<header>
+			<div class="header">
+			<figure class="Logo">
+				<a href="#" class="LOGOIMG"><img src="IMAGES/LOGO.png" alt=""></a>
+				<figcaption>Ассоциация "Союз кадастровых инженеров"</figcaption>
+			</figure>
+			<nav class="menu1"><img src="IMAGES/menu.png" id="menu_ico" alt="Menu">
+			<span>Menu
+			<ul class="menu2">
+				<li>Главная</li>
+					<li id="sub">Об Ассоциации
 					<ul>
-						<li><a href="#">Об Ассоциации</a></li>
-						<li><a href="#">Вступление</a></li>
-						<li><a href="#">Раскрытие информации</a></li>
-						<li><a href="#">Членам СРО</a></li>					
-						<li><a href="#">Пресс-служба</a></li>										
-						<li><a href="#">Вопрос-ответ</a></li>					
-						<li><a href="#">Контакты</a></li>										
+							<li><a href="#">Об Ассоциации</a></li>
+							<li><a href="#">Структура Ассоциации</a></li>
+							<li><a href="#">Документы Ассоциации</a></li>
 					</ul>
-				</nav>
-				</div>
-			</header>
-		</div>
-		<div class="main">
-		<main>
-			<div class="figure">
-				<figure>
-					<img src="IMAGES/General_page.png">
-					<figcaption></figcaption>
-				</figure>
+					</li>
+				</li>
+				<li>Раскрытие информации</li>
+				<li><a href="#">Вступление</a></li>
+				<li><a href="#">Раскрытие информации</a></li>
+				<li><a href="#">Членам СРО</a></li>	
+				<li><a href="#">Пресс-служба</a></li>		
+				<li><a href="#">Вопрос-ответ</a></li>
+				<li><a href="#">Контакты</a></li>
+				</ul>
+			</span>
+			</nav>
 			</div>
-			<div class="section">
-				<section>
-					<h1>Миссия организации</h1>
-					<span>
-					<article>
-						<header>Наша миссия</header>
-						<details>
-							<summary>... ознакомится</summary>
-							<p>содействие в становлении саморегулирования кадастровой отрасли, организация деятельности <mark>кадастровых инженеров</mark>, повышение их профессиональной ответственности, защита интересов отрасли в законодательных и исполнительных органах власти всех уровней.</p>
-							<!--<p>Lorem <mark>ip</mark>sum</p>-->
-						</details>
-						<footer>Опубликовано <time datetime="2016-12-15T12:00">15.12.2016</time></footer>				
-					</article>
-					</span>
-				</section>
+
+		</header>
+		<div class="content">
+			<div class="IMG_Theme">
+				<h1 class="IMG_Theme_lbl">Коротко об организации</h1>
+				<span class="about">Наша миссия</span>
+				<p class="about_details">Наша миссия - содействие в становлении саморегулирования кадастровой отрасли, организация деятельности кадастровых инженеров, повышение их профессиональной ответственности, защита интересов отрасли в законодательных и исполнительных органах власти всех уровней.</p>
+				<span class="link_theme"><a href="#">Узнать подробнее&nbsp;&nbsp;&nbsp;&nbsp;></a></span>
 			</div>
-		</main>
+			<div class="articles">
+				
+				<article class="article" id="law">
+					<a href="#">
+					<h2>Правовые основы</h2>
+					<hr>
+					<h3 >Текст</h3>
+					<figure>
+						<img src="IMAGES/more.png" alt="">
+						<figcaption><a href="#">Еще</a></figcaption>
+					</figure>
+					</a>
+				</article>
+				
+				<article class="article" id="InOrg">
+					<h2 >Вступление в члены</h2>
+					<hr>
+					<h3 >Текст</h3>
+					<figure>
+						<img src="IMAGES/more.png" alt="">
+						<figcaption><a href="#">Еще</a></figcaption>
+					</figure>
+				</article>
+				<article class="article" id="News">
+					<h2 >Новости отрасли</h2>
+					<hr>
+					<h3 >Текст</h3>
+					<figure>
+						<img src="IMAGES/more.png" alt="">
+						<figcaption><a href="#">Еще</a></figcaption>
+					</figure>
+				</article>
+
+			</div>
 		</div>
-		<!--<aside>Рклама, облако тэгов, ссылки, счетчик</aside>-->
-		<div class="footer">
 		<footer>
 			<div class="recvizit">
 				<p>Ассоциация "Союз кадастровых инженеров"</p>
@@ -74,20 +93,21 @@
 			</div>
 			<div class="contact">
 				<div class="contactItem">
-					<img src="IMAGES/iphone.png">
+					<figure><img src="IMAGES/iphone.png" alt="Phone"></figure>
 					<a href="#">+7 (495) 601-98-79</a>
 				</div>
 				<div class="contactItem">
-					<img src="IMAGES/location-pin.png">
-					<a href="#">Москва, Чистые пруды</a>
+					<figure><img src="IMAGES/location-pin.png" alt="Map"></figure>
+						<details>
+							<summary>Москва, Чистые пруды</summary>
+							<a href="https://yandex.ru/maps/?um=constructor%3AImk8gZ9sAOa4cZXe3DkQsVXiFJX-1WxF&amp;source=constructorStatic" target="_blank"><img id="mapID" src="https://api-maps.yandex.ru/services/constructor/1.0/static/?sid=Imk8gZ9sAOa4cZXe3DkQsVXiFJX-1WxF&amp;width=348&amp;height=240&amp;lang=ru_RU&amp;sourceType=constructor" alt="" style="border: 0;" /></a>
+						</details>
 				</div>
 				<div class="contactItem">
-					<img src="IMAGES/e-mail.png">
+					<figure><img src="IMAGES/e-mail.png" alt="e-mail"></figure>
 					<a href="#">sro-ski@mail.ru</a>
 				</div>
 			</div>
-			<!--Ссылки на соц. сети, контакты, копирайт, меню-->
 		</footer>
-		</div>
 	</body>
 </html>
