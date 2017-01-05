@@ -1,3 +1,8 @@
+/*body
+{
+	font-family: 'Roboto Slab', serif;
+}*/
+
 header
 {
 	display: block;
@@ -16,6 +21,7 @@ header
 	top: 0px;
 	z-index: 999;
 	width: 100%;
+	border: 1px solid red;
 }
 
 figure
@@ -62,16 +68,7 @@ figure
 	font-size: 1.4rem;
     line-height: 18px;
     font-weight: normal;
-    height: 100%;
-}
-
-header p
-{
-	color: #888;
-	outline: 0;
-	font-size: 1.4rem;
-    line-height: 18px;
-    font-weight: normal;
+    color: #0696d7;
 }
 
 nav
@@ -82,10 +79,10 @@ nav
 .menu1
 {
 	display: inline-block;
-	float: left;
+	float: right;
 	height: 53px;
 	list-style: none;
-	padding-left: 200px;
+	padding-right: 5%;
 }
 
 #sub:after
@@ -457,28 +454,37 @@ footer
 {
 	display: block;
 	float: left;
-	width: 45%;
+	width: 30%;
 	font-size: 13pt;
-	padding-left: 5%;
-	padding-top: 10px;
+	padding-left: 2%;
+	color: #9a9a9a;
+}
+.recvizit h3
+{
+	display: block;
 	color: #9a9a9a;
 }
 .contact
  {
  	display: block;
 	float: left;
-	width: 45%;
+	width: 30%;
 	font-size: 13pt;
-	padding-left: 5%;
-	padding-top: 10px;
  }
+
+.contact h3
+{
+	padding-left: 10%;
+	display: block;
+	color: #9a9a9a;	
+}
 
  .contactItem
  {
 	display: block;
 	float: left;
 	color: #9a9a9a;
-	width: 300px; 
+	width: 100%; 
 }
 
  .contactItem a
@@ -506,4 +512,118 @@ footer
 .menu2
 {
 	border: 1px solid;
+}
+
+.Link_web
+{
+	display: block;
+	float: left;	
+	height: 300px;
+	width: 15%;
+}
+
+.myservice
+{
+	display: block;
+	float: left;	
+	height: 300px;
+	width: 18%;	
+}
+
+.myservice h3
+{
+	padding-top: 5%;
+	display: block;
+	color: #9a9a9a;
+	padding-left: 15%;
+}
+
+.Link_web_items
+{
+	display: block;
+	height: 230px;
+	width: 100%;
+}
+.Link_web h3
+{
+	padding-top: 5%;
+	display: block;
+	color: #9a9a9a;
+	padding-left: 15%;
+}
+
+.Link_web_item 
+{
+	display: block;
+	height: 30px;
+	width: 100%;
+	padding-left: 15%;
+}
+.myservices_item
+{
+	display: block;
+	height: 30px;
+	width: 100%;
+	padding-left: 2%;
+}
+
+.myservices_item a
+{
+	display: inline-block;
+	float: left;
+	height: 30px;
+	font-size: 20px;
+	vertical-align: middle;
+	text-decoration: none;
+	color: #9a9a9a;
+}
+.Link_web_item a 
+{
+	display: inline-block;
+	float: left;
+	height: 30px;
+	font-size: 20px;
+	vertical-align: middle;
+	margin-left: 10px;
+	text-decoration: none;
+	color: #9a9a9a;
+}
+#FB_ico
+{
+	display: block;
+	float: left;
+	width: 30px;
+	height: 30px;
+	background: url(IMAGES/soc_ico.png) -70px -10px;
+	background-size: 300px 42px;
+	background-repeat: no-repeat;
+}
+#TW_ico
+{
+	display: block;
+	float: left;
+	width: 30px;
+	height: 30px;
+	background: url(IMAGES/soc_ico.png) -6px -10px;
+	background-size: 300px 42px;
+	background-repeat: no-repeat;	
+}
+#VK_ico
+{
+	display: block;
+	float: left;
+	width: 30px;
+	height: 30px;
+	background: url(IMAGES/soc_ico.png) -38px -10px;
+	background-size: 300px 42px;
+	background-repeat: no-repeat;		
+}
+#v_bord
+{
+	padding-top: 30px;
+	padding-bottom: 20px;
+	display: block;
+	float: left;
+	height: 250px;
+	width: 1%;
 }
