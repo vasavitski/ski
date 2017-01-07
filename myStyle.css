@@ -1,9 +1,10 @@
-/*body
+body
 {
-	font-family: 'Roboto Slab', serif;
-}*/
+	/*font-family: 'Roboto Slab', serif;*/
+	/*font-family: 'Frutiger',sans-serif;*/
+}
 
-header
+/*header
 {
 	display: block;
 	width: 100%;
@@ -11,7 +12,7 @@ header
 	margin: 0 auto;
 	top: 0px;
 	z-index: 998;
-}
+}*/
 
 .header
 {
@@ -21,7 +22,8 @@ header
 	top: 0px;
 	z-index: 999;
 	width: 100%;
-	border: 1px solid red;
+	height: 53px;
+	margin: 0 auto;
 }
 
 figure
@@ -71,18 +73,15 @@ figure
     color: #0696d7;
 }
 
-nav
-{
-	height: 300px;
-}
+
 
 .menu1
 {
-	display: inline-block;
-	float: right;
-	height: 53px;
-	list-style: none;
-	padding-right: 5%;
+	display: block;
+	float: left;
+	height: 50px;
+	width: 150px;
+	margin-left: 10px;
 }
 
 #sub:after
@@ -90,36 +89,40 @@ nav
 	content: "➦";
 }
 
-.menu1 img
+.menu1_img
 {
-	display: inline-block;
+	display: block;
 	float: left;
-	height: 47px;
+	height: 50px;
+	width: 30px;
 	padding-top: 10px;
-	padding-bottom: 3px;
+	padding-right: 5px;
 }
 
-.menu1 span
+.menu1_img img
 {
-	display: inline-block;
+	height: 30px;
+	width: 30px;
+}
+
+.menu1_lbl
+{
+	display: block;
 	float: left;	
-	padding-left: 5px;
-	vertical-align: middle;
-	padding-top: 15px;
-	font-size: 1.4rem;
+	padding-top: 18px;
+	font-size: 1.1rem;
     line-height: 18px;
     font-weight: normal;
 	color: #9a9a9a;
-}
-.menu1 > span:hover .menu2
-{
-	display: block;
+	width: 100px;
+	height: 50px;
 }
 
 #menu_ico
 {
 	width: 30px;
 	height: 30px;
+	margin-right: 10px;
 }
 
 .menu2
@@ -203,7 +206,7 @@ nav
 .content
 {
 	display: block;
-	margin-top: 10px;
+	margin-top: 100px;
 	width: 100%;
 	height: 100%
 }
@@ -219,10 +222,12 @@ body
 	float: left;
 	font-family: 'Frutiger',sans-serif;
 	width: 100%;
-	height: 355px;
+	height: 305px;
 	top: 0px;
 	left: 0px;
 	background-image: url("IMAGES/General_page.png");
+	background-position: 0px -50px;
+	/*background-repeat: no-repeat;*/
 }
 .IMG_Theme_pic
 {
@@ -237,7 +242,7 @@ body
 	display: block;
 	float: left;
 	font-size: 45px;
-	line-height: 47px;
+	line-height: 45px;
 	color: #0696d7;
 	width: 51%;
 	font-weight: lighter;
@@ -306,7 +311,7 @@ article
 	border: 1px solid;
 	border-color: grey;
 	width: 200px;
-	height: 250px;
+	height: 350px;
 }
 .article
 {
@@ -357,9 +362,11 @@ article
 {
 	display: inline-block;
 	width: 200px;
-	height: 250px;
+	height: 350px;
 	background-image: url('IMAGES/law.png');
+	background-position: bottom;
 	background-size: 200px 250px;
+	background-repeat: no-repeat;
 }
 
  #InOrg
@@ -626,4 +633,222 @@ footer
 	float: left;
 	height: 250px;
 	width: 1%;
+}
+#v_bord_h
+{
+	padding-top: 10px;
+	padding-bottom: 5px;
+	display: block;
+	float: left;
+	height: 35px;
+	width: 1%;
+}
+.navigation {
+   list-style: none; /* Отключение отображения маркеров. */
+}
+.navigation li {
+   float: left; /* Выстраивание элементов списка в один ряд. */
+   margin-right: 1px; /* создание отступов для того, чтобы не сливались пункты меню. */
+   font-family: Verdana, Arial, Helvetica, sans-serif; /* Указание типа шрифта. */
+   font-size: 14px; /* Размер текста в ссылках. */
+}
+.navigation li a {
+   display: block; /* Изменение отображения на блочное для того чтобы иметь возможность задать внутренние отступы. */
+   padding: 15px 20px;  /* Внутри блочные отступы. */
+   background: #0db5b5; /* Цвет блоков меню. */
+   color: #3f3f3f; /* Цвет текста в блоках меню. */
+   text-decoration: none; /* Устранение подчёркивания ссылок. */
+   position: relative; /* Это необходимо при использовании Internet Explorer 6 для того, чтобы ссылка по всей своей площади была «кликабельной». */
+}
+.navigation li a:hover {
+   background: #92d3d3; /* Цвет блока при наведении курсора. */
+   color: #6b6b6b;  /* Цвет текста при наведении курсора. */
+}
+#NAVmenu 
+{
+  position: fixed;
+  top: 36px;
+  z-index: 999;
+  display: block;
+  /*background: #0696d7; /*#0db5b5;*/
+  background-image: url("IMAGES/General_page.png");
+
+  width: 100%;
+  padding:1;
+  padding-bottom: 5px;
+  text-align: center;
+  float:left;
+  font-family: Verdana, Arial, Helvetica, sans-serif; 
+}
+#NAVmenu a {
+  /*color: #3f3f3f;*/
+  /*color: #9a9a9a;*/
+      color: #0696d7;
+  text-decoration: none;
+}
+#NAVmenu a:hover {
+  color: #6b6b6b;
+}
+#NAVmenu ul {
+  padding:0;
+  margin:0;
+  display: block;
+  text-align: center;
+  font-size: 0;
+}
+#NAVmenu ul:before
+{
+	content: '';
+	height: 100%;
+	display: inline-block;
+}
+
+#NAVmenu ul:before, li
+{
+	vertical-align: middle; /* еще вот */
+}
+
+#NAVmenu li 
+{
+  display: inline-block;
+  list-style: none;
+  width:125px;
+  /*margin: 0 10px;*/
+  padding-top: 10px;
+  border: 2px solid grey;
+  height: 45px;
+  border-color: gray;
+  background-color:  #f5f5f5; 	
+  /*color: #9a9a9a;*/
+  color: #0696d7;
+  border-radius: 5px;
+  opacity: 0.95;
+  z-index: 998;
+
+}
+#NAVmenu li ul { 
+  position:absolute;
+  display: none;
+  z-index: 998;
+
+} 
+#NAVmenu li ul li {
+  float: none;
+  display: inline;
+  width:100%;
+  line-height:35px;
+  font-size: 16px;
+  text-align: left;
+  padding-left: 10px;
+  padding-top: 10px;
+  z-index: 999;
+}
+#NAVmenu li ul li:hover {
+  background: #c392b;
+}
+#NAVmenu li:hover ul {
+  display:block;
+}
+#NAVmenu li ul li { 
+  display: block; 
+  /*background:#92d3d3;*/
+  background-color:  #f5f5f5;
+  color: red;
+}
+#N_card_ico
+{
+	padding-top: 0px;
+	display: block;
+	float: right;
+	width: 22px;
+	height: 22px;
+}
+.Card
+{
+	display: block;
+	float: left;
+	height: 50px;
+	padding-left: 5px;
+	padding-right: 5px;
+	padding-top: 10px;
+	width: 70px;
+	font-family: 'Frutiger',sans-serif;
+}
+.Npays
+{
+	display: block;
+	float: left;
+	position: relative;
+	color: red;
+	left: 67px;
+	height: 50px;
+	width: 2px;
+	transform: rotate(-45deg);
+	font-weight: bold;
+}
+#card_ico
+{
+	display: block;
+	float: right;
+	width: 40px;
+	height: 40px;
+}
+.search
+{
+	display: block;
+	float: left;
+	width: 190px;
+	height: 50px;
+}
+
+
+
+
+.searchField
+{
+	display: block;
+	float: left;
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-top: 13px;
+	padding-bottom: 13px;
+}
+.searchField input
+{
+	width: 160px;
+	height: 20px; 
+	color: #9a9a9a;
+	font-size: 14px;
+}
+
+.SearshButton
+{
+	position: absolute;
+	display: block;
+	float: left;
+	padding-left: 0px;
+	padding-right: 0px;
+	margin-top: 13px;
+	padding-bottom: 0px;
+	border-radius: 5px;
+	width: 25px;
+	height: 25px;
+}
+
+.SearshButton img
+{
+	position: relative;
+	left: 150px;
+	width: 16px;
+	height: 16px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	/*margin-left: -40px;*/
+}
+.blanc
+{
+	display: block;
+	float: left;
+	height: 50px;
+	width: 215px;
 }
