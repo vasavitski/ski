@@ -2,10 +2,11 @@
 <html lang=”ru”>
 	<head>
 		<meta charset="utf-8">
-		<title>Об ассоциации"</title>
+		<title>Главная СРО "Союз кадастровых инженеров"</title>
 		<link href="myStyle.css" rel="stylesheet">
 		<link rel="icon" type="image/png" href="IMAGES/LOGO.png" />
 		<!--<script src="scripts.js"></script>-->
+		<link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
 	</head> 
 	<body>
 		<div class="header">
@@ -83,30 +84,59 @@
 				</ul>
 			</nav>
 		</div>
+<div class="content">
+<form action="#">
+  <br>
+  <p>Для вступления в члены ассоциации необходимо заполнить анкету.</p>
+  <fieldset>
+    <legend>Ф.И.О.</legend>
+      <label for="Surname">Фамилия<em>*</em></label>
+      <input id="Surname"><br>
+      
+      <label for="name">Имя <em>*</em></label>
+      <input id="name"><br>
+      
+      <label for="middle_name">Отчество</label>
+      <input id="middle_name"><br>
+  </fieldset>
+  <fieldset>
+    <legend>Основания вступления</legend>
+      <label for="Doc_num"> № аттестата <em>*</em></label>
+      <input id="Doc_num"><br>
+      
+      <label for="Doc_data"> Дата выдачи <em>*</em></label>
+      <input id="Doc_data"><br>
+      
+      <label for="Doc_org">Орган, выдавший аттестат</label>
+      <input id="Doc_org"><br>
+  </fieldset>
 
-		<div class="content">
-			<div class="IMG_Theme" id="history">
-				<p class="about_details">
-					Ассоциация «Союз кадастровых инженеров» создана 11 февраля  2016 года.
-26 апреля 2016 года  Ассоциацией «Союз кадастровых инженеров» приобретен статус саморегулируемой организации (регистрационный номер в добровольном реестре саморегулируемых организаций в сфере кадастровой деятельности №469).
-В соответствии с изменениями законодательства в области кадастровых отношений в июле 2016 года Ассоциация «Союз кадастровых инженеров» прошла перерегистрацию в качестве саморегулируемой организации кадастровых инженеров и внесена в государственный реестр СРО кадастровых инженеров.
-Регистрационный номер Ассоциации «Союз кадастровых инженеров» в государственном реестре СРО кадастровых инженеров  №001 от 05.07.2016 г.
+  <fieldset>
+    <legend>Контактная информация</legend>
+      <label for="addres"> Адрес проживания <em>*</em></label>
+      <input id="addres"><br>
 
-				</p>
-			</div>
+      <label for="telephone">Телефон <em>*</em></label>
+      <input id="telephone"><br>
 
-			<div class="IMG_Theme" id="rules">
-				<p class="about_details">
-Саморегулируемая организация Ассоциация «Союз кадастровых инженеров» образована на принципах добровольного объединения ее членов в целях обеспечения условий для профессиональной деятельности кадастровых инженеров, для представления законных интересов своих членов в их отношениях с федеральными органами государственной власти, их территориальными органами, органами государственной власти субъектов Российской Федерации, органами местного самоуправления.
-Деятельность саморегулируемой организации Ассоциации «Союз кадастровых инженеров» направлена на содействие кадастровым инженерам - членам Ассоциации в разработке стандартов и правил профессиональной деятельности, обязательных для выполнения всеми членами Ассоциации, а также в повышении их квалификации.
-				</p>
-			</div>
-			<div class="IMG_Theme" id="union">
-				<p class="about_details">
-СРО Ассоциация «Союз кадастровых инженеров» в состав входит членов  Национального Объединения кадастровых инженеров некоммерческого партнёрства «Национальный совет по кадастровой деятельности»  (НП «НСКД») и принимает активное участие в его работе.
-				</p>
-			</div>
-
+      <label for="email">Email <em>*</em></label>
+      <input id="email"><br>
+  </fieldset>
+  <fieldset>
+    <legend>Персональная информация</legend>
+      <label for="age">Возраст<em>*</em></label>
+      <input id="age"><br>
+      <label for="gender">Пол</label>
+      <select id="gender">
+        <option value="female">Мужской</option>
+        <option value="male">Женский</option>
+      </select><br>
+      <label for="comments">Перечислите дополнительную информацию, которую вы хотели бы сообщить о себе</label>
+      <textarea id="comments"></textarea>
+  </fieldset>
+  <p><input type="submit" value="Отправить информацию"></p>
+</form>	
+</div>
 			<div class="articles">	
 				<div class="articleItem" id="protection">
 					<a href="#">
@@ -136,6 +166,21 @@
 					<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus facilisis tempor ipsum, eu congue lectus tempor sed. Donec sit amet fermentum leo. Nullam imperdiet est est, et mollis lorem faucibus a. Nullam turpis turpis, ullamcorper a dolor ac, dictum porta justo. Mauris condimentum vestibulum feugiat. </p>
 					</a>
 				</div>
+
+
+				<!--
+				<article class="article" id="help">
+					<h2>Помощь</h2>
+					<hr>
+					<h3 >Текст</h3>
+					<figure>
+						<img src="IMAGES/more.png" alt="">
+						<figcaption><a href="#">Еще</a></figcaption>
+					</figure>
+				</article>-->
+
+			</div>
+		</div>
 		<footer>
 			<div class="Link_web">
 				<h3>Мы в соцсетях:</h3>
