@@ -369,108 +369,166 @@ body
     line-height: 1.11;
 }
 
-.article
+.articleItem
 {
 	display: inline-block;
 	border: 1px solid;
 	border-color: grey;
 	width: 24.5%;
 	height: 350px;
-	margin: 0 auto;
 }
 
-.article > a
+.articleItem a
 {
 	text-decoration: none;
 }
 
-.article h2
+.articleItem a:visited
 {
-	color: #444444;
-    line-height: 24px;
-	padding-left: 20px;
-    text-decoration: none;
+	color: gray;
 }
 
-.article h3
+.articleItem h2
 {
-    color: transparent;
-    line-height: 24px;
-   	padding-left: 20px;
+	text-align: center;
+}
+.articleItem p
+{
+	padding-left: 10px;
+	display: block;
+}
+.articleItem figure
+{
+	padding-top: 70px;
 }
 
-.article hr
-{
-	color: #444444;
-}
-.article img
+.articleItem img
 {
 	display: inline-block;
 	float: left;
 	width: 20px;
 	height: 20px;
 	color: white;
-	position: absolute;
-	top: 100%;
 }
-
-.article figure
-{
-	display: none;
-}
-
-.article figcaption
+.articleItem figcaption
 {
 	display: inline-block;
 	float: left;
-	position: absolute;
-	left: 80px;
+	margin-left: 5px;
 }
-.article:hover
+#protection
+{
+	background-image: url('IMAGES/protection.jpg');
+	display: inline-block;
+	background-position: bottom;
+	background-size: 100% 270px;
+	background-repeat: no-repeat;
+}
+#protection:hover
 {
 	background-image: url('IMAGES/article1.png');
-	background-size: 100% 100%;
 	display: inline-block;
+	background-position: bottom;
+	background-size: 100% 270px;
+	background-repeat: no-repeat;
 }
-
-.article:hover a{color: white; text-decoration: none;}
-.article:hover h3{color: white;}
-.article:hover figcaption{color: white;}
-.article:hover figure a
+.articleItem p
 {
+	display: inline-block;
+	visibility: hidden;
 	color: white;
-
+		text-shadow: 
+		-0   -4px 0   #000000,
+		 0   -4px 0   #000000,
+		-0    4px 0   #000000,
+		 0    4px 0   #000000,
+		-4px -0   0   #000000,
+		 4px -0   0   #000000,
+		-4px  0   0   #000000,
+		 4px  0   0   #000000,
+		-1px -4px 0   #000000,
+		 1px -4px 0   #000000,
+		-1px  4px 0   #000000,
+		 1px  4px 0   #000000,
+		-4px -1px 0   #000000,
+		 4px -1px 0   #000000,
+		-4px  1px 0   #000000,
+		 4px  1px 0   #000000,
+		-2px -4px 0   #000000,
+		 2px -4px 0   #000000,
+		-2px  4px 0   #000000,
+		 2px  4px 0   #000000,
+		-4px -2px 0   #000000,
+		 4px -2px 0   #000000,
+		-4px  2px 0   #000000,
+		 4px  2px 0   #000000,
+		-3px -4px 0   #000000,
+		 3px -4px 0   #000000,
+		-3px  4px 0   #000000,
+		 3px  4px 0   #000000,
+		-4px -3px 0   #000000,
+		 4px -3px 0   #000000,
+		-4px  3px 0   #000000,
+		 4px  3px 0   #000000,
+		-4px -4px 0   #000000,
+		 4px -4px 0   #000000,
+		-4px  4px 0   #000000,
+		 4px  4px 0   #000000,
+		-4px -4px 0   #000000,
+		 4px -4px 0   #000000,
+		-4px  4px 0   #000000,
+		 4px  4px 0   #000000;
 }
-
+.articleItem:hover p
+{
+	visibility: visible;
+}
 #law 
 {
-	display: inline-block;
 	background-image: url('IMAGES/law.png');
+	display: inline-block;
 	background-position: bottom;
-	background-size: 200px 250px;
+	background-size: 100% 270px;
 	background-repeat: no-repeat;
 }
-
-#InVite
+#law:hover
 {
-	display: inline-block;
-	background-image: url('IMAGES/invite.png');
-	background-position: bottom;
-	background-size: auto 250px;
-	background-repeat: no-repeat;
-}
-#InVite:hover
-{
-	display: inline-block;
 	background-image: url('IMAGES/article1.png');
-	background-size: 100%;
-}
-#News
-{
 	display: inline-block;
-	background-image: url('IMAGES/inform.jpg');
 	background-position: bottom;
-	background-size: auto 250px;
+	background-size: 100% 270px;
+	background-repeat: no-repeat;
+}
+#inVite
+{
+	background-image: url('IMAGES/invite.png');
+	display: inline-block;
+	background-position: bottom;
+	background-size: 100% 270px;
+	background-repeat: no-repeat;
+}
+#inVite:hover
+{
+	background-image: url('IMAGES/article1.png');
+	display: inline-block;
+	background-position: bottom;
+	background-size: 100% 270px;
+	background-repeat: no-repeat;
+}
+#news
+{
+	background-image: url('IMAGES/inform.jpg');
+	display: inline-block;
+	background-position: bottom;
+	background-size: 100% 270px;
+	background-repeat: no-repeat;
+}
+#news:hover
+{
+	background-image: url('IMAGES/article1.png');
+	display: inline-block;
+	background-position: bottom;
+	background-size: 100% 270px;
 	background-repeat: no-repeat;
 }
 #help
@@ -482,12 +540,6 @@ body
 	background-repeat: no-repeat;
 }
 
-#law:hover
-{
-	display: inline-block;
-	background-image: url('IMAGES/article1.png');
-	background-size: 100%;
-}
 .menu
 {
 	position: relative;
