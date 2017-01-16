@@ -411,6 +411,12 @@ body
 	width: 280px;
 	height: 350px;
 }
+.articleItem:hover
+{
+	/*-------------------------------------------------------------------------------------------*/
+	animation: activeBanner 3s infinite;/*--------------------------------*/
+}
+
 
 .articleItem a
 {
@@ -976,9 +982,13 @@ footer
 }
 #NAVmenu li ul li:hover {
   background: #c392b;
+  animation: gomenuY 3s infinite;/*--------------------------------*/
 }
 #NAVmenu li:hover ul {
   display:block;
+}
+#NAVmenu li:hover {
+   animation: gomenuX 3s infinite;/*--------------------------------*/ 
 }
 #NAVmenu li ul li { 
   display: block; 
@@ -1266,6 +1276,28 @@ border-top:1px solid #bbb;
 	0%{padding-bottom: 0px;}
 	50%{padding-top: 2px;}
 	100%{padding-top: 0px;}
+}
+@keyframes gomenuY
+{
+	0%{transform: translateX(0px);}
+	25%{transform: translateX(-10px);}
+	50%{transform: translateX(0px);}
+	100%{transform: translateX(10px);}	
+}
+@keyframes gomenuX
+{
+	0%{transform: translateY(0px);}
+	25%{transform: translateY(-5px);}
+	50%{transform: translateY(0px);}
+	100%{transform: translateY(5px);}	
+}
+
+@keyframes activeBanner
+{
+	0%{transform: skewX(0deg);}
+	25%{transform: skewX(-5deg);}
+	50%{transform: skewY(0deg);}
+	100%{transform: skewY(5deg);}		
 }
 
 .Card:hover #N_card_ico
